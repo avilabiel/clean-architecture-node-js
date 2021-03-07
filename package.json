@@ -1,0 +1,8 @@
+{
+  "name": "clean-architecture-node-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/avilabiel/clean-architecture-node-js.git",
+  "author": "Gabriel Ávila <avilabiel@gmail.com>",
+  "license": "MIT"
+}
