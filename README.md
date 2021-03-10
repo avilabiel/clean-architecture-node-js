@@ -11,18 +11,18 @@ This project will follow the Clean Architecture (SOLID) suggested by Robert C. M
 src
 +-- entities
     +-- entity
-        +-- entity.js (e.g.: Lead.js)
-        +-- entity_repository.js (e.g.: LeadRepository.js -> Interface)
-+-- application
-    +-- use_case1
-        +-- use_case1.js (e.g.: CreateLead.js, SendLeadByEmail.js)
-        +-- use_case1_test.js
+        +-- Lead.js
+        +-- LeadRepository.js (interface)
++-- app
+    +-- CreateLead
+        +-- CreateLead.js           # Class
+        +-- CreateLead.test.js      # Unit Tests
+        +-- requirements.md          # Use Case in Normal Language
 +-- adapters
     +-- topic (e.g.: controllers, routes, serializers)
         +-- topic1.js (e.g.: LeadController.js, LeadRoutes.js, LeadSerializer.js)
 +-- externals
     +-- lib1 (Express, Inquirer, Sequelize, Rollbar, Sentry, etc.)
-    +-- ...
 +-- index.js            # Starts the application (in this case, the server - from externals)
 ```
 
