@@ -28,12 +28,11 @@ class LeadInMemory extends LeadRepository {
   }
 
   persist(leadEntity) {
-    const row = Object.assign({}, leadEntity);
     const rowId = this.id++;
-    row.id = rowId;
-    this.data.push(row);
+    leadEntity.id = rowId;
+    this.data.push(leadEntity);
 
-    return Promise.resolve(row);
+    return Promise.resolve(leadEntity);
   }
 }
 
