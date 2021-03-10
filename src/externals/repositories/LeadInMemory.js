@@ -24,7 +24,8 @@ class LeadInMemory extends LeadRepository {
       "+553281832919"
     );
 
-    this.persist(gabriel).then(() => this.persist(leticia));
+    this.persist(gabriel);
+    this.persist(leticia);
   }
 
   persist(leadEntity) {
