@@ -4,5 +4,12 @@
   "main": "index.js",
   "repository": "https://github.com/avilabiel/clean-architecture-node-js.git",
   "author": "Gabriel Ávila <avilabiel@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "test": "jest --ci --verbose --forceExit --detectOpenHandles"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
