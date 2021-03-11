@@ -10,8 +10,3 @@
 
 1. ✅ System returns an error
 2. If it's an API access, it should return a generic error response
-
-> ## Exception - Error to send an email
-
-1. System returns error
-2. If it's an API access, it should return a generic error response
