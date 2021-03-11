@@ -1,1 +1,1 @@
-const Express = require("./externals/Express");
+require("./externals/Express");
