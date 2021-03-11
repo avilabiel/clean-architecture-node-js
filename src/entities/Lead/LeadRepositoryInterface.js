@@ -1,5 +1,5 @@
-class LeadRepository {
-  persit(leadEntity) {
+class LeadRepositoryInterface {
+  persist(leadEntity) {
     throw new Error("ERROR_METHOD_NOT_IMPLEMENTED");
   }
 
@@ -20,4 +20,4 @@ class LeadRepository {
   // }
 }
 
-module.exports = LeadRepository;
+module.exports = LeadRepositoryInterface;

@@ -1,7 +1,7 @@
-const LeadRepository = require("../../entities/Lead/LeadRepository");
+const LeadRepositoryInterface = require("../../entities/Lead/LeadRepositoryInterface");
 const Lead = require("../../entities/Lead/Lead");
 
-class LeadInMemory extends LeadRepository {
+class LeadInMemory extends LeadRepositoryInterface {
   constructor() {
     super();
     this.id = 1;
