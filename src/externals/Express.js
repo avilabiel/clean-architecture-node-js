@@ -2,6 +2,7 @@ const express = require("express");
 const helmet = require("helmet");
 const bodyParser = require("body-parser");
 const Youch = require("youch");
+const ServiceLocator = require("./ServiceLocator");
 
 class Server {
   constructor() {
@@ -19,6 +20,12 @@ class Server {
     this.express.use(helmet());
     this.express.use(bodyParser.json());
     this.express.use(bodyParser.urlencoded({ extended: false }));
+    this.express.use(this.buildServiceLocator);
+  }
+
+  buildServiceLocator(req, res, next) {
+    req.serviceLocator = ServiceLocator;
+    return next();
   }
 
   routes() {

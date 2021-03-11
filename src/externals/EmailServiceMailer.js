@@ -16,7 +16,7 @@ class EmailService extends EmailServiceInterface {
   }
 
   send({ to, from, subject, content, cco = [], cc = [] }) {
-    return this.mailer.sendMail({
+    const result = this.mailer.sendMail({
       to,
       from,
       subject,
@@ -24,6 +24,15 @@ class EmailService extends EmailServiceInterface {
       cc,
       cco,
     });
+
+    return {
+      success: this.emailHasSent(result),
+      operation: result,
+    };
+  }
+
+  emailHasSent(lastOperation) {
+    return lastOperation.messageId !== undefined;
   }
 }
 
