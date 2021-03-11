@@ -5,7 +5,9 @@
   "repository": "https://github.com/avilabiel/clean-architecture-node-js.git",
   "author": "Gabriel Ávila <avilabiel@gmail.com>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "nodemailer": "^6.5.0"
+  },
   "scripts": {
     "test": "jest --ci --verbose --forceExit --detectOpenHandles"
   },

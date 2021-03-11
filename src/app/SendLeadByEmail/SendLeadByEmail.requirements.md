@@ -1,10 +1,8 @@
-# Create Leads
+# Send Lead By Email
 
 ## Use Cases
 
-1. ✅ System receives the data through endpoint
-2. ✅ System saves the data
-3. System sends an email saying "thank you"
+1. System sends an email saying "thank you"
 
 > ## Exception - Error to create data
 

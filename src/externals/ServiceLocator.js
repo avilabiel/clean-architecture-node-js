@@ -3,6 +3,13 @@ const constants = require("./Constants");
 class ServiceLocator {
   constructor() {
     this.repositories = this.buildRepositories();
+    this.services = this.buildServices();
+  }
+
+  buildServices() {
+    return {
+      email: this.buildEmailService(),
+    };
   }
 
   buildRepositories() {
@@ -23,7 +30,9 @@ class ServiceLocator {
     );
   }
 
-  buildSerializer() {}
+  buildEmailService() {
+    return require("./EmailServiceMailer");
+  }
 }
 
 module.exports = new ServiceLocator();
