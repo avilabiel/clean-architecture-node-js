@@ -81,6 +81,7 @@ The automated tests will be checked for every pre commit. It will not be allowed
 By doing this simple project, I discovered some answers for my questions:
 
 - WIP
+- Why Unit Tests are better than Integration?
 
 ### What is a good workflow to write good automated tests without losing productivity?
 
