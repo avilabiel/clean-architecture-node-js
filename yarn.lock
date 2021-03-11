@@ -2696,6 +2696,11 @@ mimic-fn@^2.1.0:
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
 
+mini-deep-assign@0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/mini-deep-assign/-/mini-deep-assign-0.0.8.tgz#14fa4cad93d47cfbb4392796a8b0015e7f60cbcd"
+  integrity sha1-FPpMrZPUfPu0OSeWqLABXn9gy80=
+
 minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
@@ -2715,6 +2720,11 @@ mixin-deep@^1.2.0:
   dependencies:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
+
+module-parent@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/module-parent/-/module-parent-0.0.2.tgz#be1cbb3cb6a55060fc86467d2f2d2cd0a600e199"
+  integrity sha1-vhy7PLalUGD8hkZ9Ly0s0KYA4Zk=
 
 ms@2.0.0:
   version "2.0.0"
@@ -3177,6 +3187,14 @@ request@^2.88.2:
     tough-cookie "~2.5.0"
     tunnel-agent "^0.6.0"
     uuid "^3.3.2"
+
+require-dir-all@^0.4.15:
+  version "0.4.15"
+  resolved "https://registry.yarnpkg.com/require-dir-all/-/require-dir-all-0.4.15.tgz#4e9928831adf1e18b15d3943c97f91ac88557b3b"
+  integrity sha1-TpkogxrfHhixXTlDyX+RrIhVezs=
+  dependencies:
+    mini-deep-assign "0.0.8"
+    module-parent "0.0.2"
 
 require-directory@^2.1.1:
   version "2.1.1"
