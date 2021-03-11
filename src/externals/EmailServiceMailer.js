@@ -15,8 +15,8 @@ class EmailService extends EmailServiceInterface {
     });
   }
 
-  send({ to, from, subject, content, cco = [], cc = [] }) {
-    const result = this.mailer.sendMail({
+  async send({ to, from, subject, content, cco = [], cc = [] }) {
+    const result = await this.mailer.sendMail({
       to,
       from,
       subject,
