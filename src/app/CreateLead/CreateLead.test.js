@@ -33,21 +33,13 @@ describe("CreateLead", () => {
       throw new Error();
     });
 
-    // const lead = await CreateLead(
-    //   "Crazy Test",
-    //   "test@gmail.com",
-    //   "+5511932919232",
-    //   { leadRepository: mockLeadRepository }
-    // );
-
-    // Compare id
-    // expect(mockLeadRepository.persist).toHaveBeenCalledWith(
-    //   new Lead(null, "Crazy Test", "test@gmail.com", "+5511932919232")
-    // );
-    expect(() => {
+    const testFunction = () =>
       CreateLead("Crazy Test", "test@gmail.com", "+5511932919232", {
         leadRepository: mockLeadRepository,
       });
+
+    expect(() => {
+      testFunction();
     }).toThrowError(Error);
   });
 
