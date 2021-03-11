@@ -8,8 +8,8 @@ class Server {
     this.express = express();
 
     this.middlewares();
-    // this.routes();
-    // this.invalidRoutes();
+    this.routes();
+    this.invalidRoutes();
     this.exception();
 
     this.createHTTPServer();
@@ -22,11 +22,11 @@ class Server {
   }
 
   routes() {
-    this.express.use(require("./routes"));
+    this.express.use(require("../adapters/routes/Express/routes"));
   }
 
   invalidRoutes() {
-    this.express.use(require("./invalid-routes"));
+    this.express.use(require("../adapters/routes/Express/invalidRoutes"));
   }
 
   exception() {
