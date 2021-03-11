@@ -4,7 +4,6 @@ const SendLeadByEmail = require("./app/SendLeadByEmail/SendLeadByEmail");
 
 /*
  TODO: Externals - Sequelize
- TODO: Automated Tests for Controllers (endpoints)
  TODO: Improve imports
 */
 const t = async () => {

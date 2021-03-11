@@ -66,9 +66,13 @@ src
         +-- CreateLead.requirements.md      # Use Case in Normal Language
 +-- adapters
     +-- topic (e.g.: controllers, routes, serializers)
-        +-- topic1.js (e.g.: LeadController.js, LeadRoutes.js, LeadSerializer.js)
-+-- externals
-    +-- lib1 (Express, Inquirer, Sequelize, Rollbar, Sentry, etc.)
+        +-- item
+            +-- item1.js (e.g.: LeadController.js, LeadRoutes.js, LeadSerializer.js)
+            +-- item1.requirements.md
+            +-- item1.test.js
++-- externals           # External Details like database, loggers, servers, Express, Inquirer, ...
+    +-- Express.js
+    +-- EmailService.js
 +-- index.js            # Starts the application (in this case, the server - from externals)
 ```
 
@@ -82,7 +86,16 @@ By doing this simple project, I discovered some answers for my questions:
 
 - WIP
 - Why Unit Tests are better than Integration?
+- Why should we keep both?
 
 ### What is a good workflow to write good automated tests without losing productivity?
 
 WIP
+
+- Think about the Use Cases
+- Start by Entities and Interfaces
+- Create the files following project's structure
+- Go to unit tests
+- Go to Controllers
+- Go to integration tests
+- Code!
