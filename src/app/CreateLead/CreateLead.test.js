@@ -42,7 +42,4 @@ describe("CreateLead", () => {
       testFunction();
     }).toThrowError(Error);
   });
-
-  it("It should send an email confirming registration", () => {});
-  it("It should throw an error when email service fails", () => {});
 });

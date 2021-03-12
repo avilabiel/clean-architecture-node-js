@@ -32,7 +32,7 @@ A Interface should be a contract with very strict and necessary terms (methods).
 
 ### Dependency Inversion Principle
 
-Depends on Instances instead of Objects and Classes. With Instances you have:
+Depends on Interfaces instead of Objects and Classes. With Interfaces you have:
 
 - A Contract, so it doesn't matter external details (like database type, presentation, etc.);
 - This Contract has only the necessary items. When we have unnecessary items being available and being able to be used, undesired problems could come

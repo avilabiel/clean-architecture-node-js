@@ -9,8 +9,8 @@
 
 > ## Exception - Error to save a new Lead
 
-1. System returns a generic error message
+1. ✅ System returns a generic error message
 
 > ## Exception - Error to send an email
 
-1. System returns a generic error message
+1. ✅ System returns a generic error message
