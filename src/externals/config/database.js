@@ -11,4 +11,5 @@ module.exports = {
     underscored: true,
   },
   timezone: "-03:00",
+  seederStorage: "sequelize",
 };
